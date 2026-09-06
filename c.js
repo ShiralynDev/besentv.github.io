@@ -651,6 +651,8 @@ function markSelectedLayout() {
             }
         }
 
+        if (menuIndex == 1)
+            menu[menuIndex] = replaceAt(menu[menuIndex], "  SRTD", "SRTD"); // 2 Spaces are removed to avoid cutting the version text of when adding 2 symbols
         menu[menuIndex] = replaceAt(menu[menuIndex], layoutId, '(' + layoutId + ')');
     }
 }
